@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Clone Repo') {
       steps {
-        git credentialsId: 'github-creds', url: 'https://github.com/giriNova74/React-DevOps-project.git'
+        git credentialsId: 'github-creds', url: 'https://github.com/giriNova74/React-DevOps-project.git', branch: 'main'
       }
     }
 
